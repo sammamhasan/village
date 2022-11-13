@@ -442,8 +442,8 @@ void nsun()
     if(ssun == true)
     {
         s += 0.003;
-        if(s > 40)
-            s = -40;
+        if(s > 70)
+            s = -70;
     }
     else if (ssun == false)
     {
@@ -457,8 +457,8 @@ void scar()
     if(ncar == true)
     {
         n += 0.005;
-        if(n > 40)
-            n = -40;
+        if(n > 70)
+            n = -70;
     }
     else if (ncar == false)
     {
@@ -471,6 +471,8 @@ void sammam(void)
 {
     scar();
     nsun();
+    glutPostRedisplay();
+
 }
 
 int main (int argc, char **argv)
